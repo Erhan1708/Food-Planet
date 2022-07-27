@@ -1,7 +1,7 @@
-import tofu_burger from "../asset/img/Tofu-Burger.svg"
-import cheeseburger1 from "../asset/img/cheeseburger1.svg";
-import cheeseburger2 from "../asset/img/cheeseburger2.svg";
-import cheeseburger3 from "../asset/img/cheeseburger3.svg";
+import tofu_burger from "../asset/img/new_menu/Tofu-Burger.svg"
+import cheeseburger1 from "../asset/img/new_menu/cheeseburger1.svg";
+import cheeseburger2 from "../asset/img/new_menu/cheeseburger2.svg";
+import cheeseburger3 from "../asset/img/new_menu/cheeseburger3.svg";
 
 export const nawBar = [
    {

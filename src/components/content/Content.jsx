@@ -1,5 +1,5 @@
 import React from 'react'
-import burger from "../../asset/img/burger.svg"
+import burger from "../../asset/img/new_menu/burger.svg"
 import next from "../../asset/icons/next.svg"
 import styles from "./Content.module.css"
 
