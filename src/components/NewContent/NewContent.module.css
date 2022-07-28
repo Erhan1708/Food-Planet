@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .navBar  ul li{
 display: inline;
 list-style: none;
 margin-left: 40px;
 }
 .navBar{
+   font-family: 'Roboto', sans-serif;
    display: flex;
    align-items: center;
 }
@@ -15,7 +16,7 @@ margin-left: 40px;
 }
 .navBar h1{
    color:#254F4C;
-   margin: 0 60px 0 140px;
+   margin: 0 120px 0 10px;
    font-size: 28px;
    font-family: 'Roboto Condensed', sans-serif;
 }
@@ -24,15 +25,17 @@ margin-left: 40px;
    display: flex;
 }
 .product_block{
+   font-family: 'Roboto', sans-serif;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    background-color: #254F4C;
-   width: 265px;
-   margin:80px 18px;
+   width: 255px;
+   margin:80px 12px;
    color: white;
    border-radius: 45px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .description{
    width: 231px;
@@ -63,7 +66,7 @@ margin-left: 40px;
    font-size: 24px;
 }
 .product_block h3{
-   margin: 0;
+   margin:7px 0 0 0;
 }
 .product_block img{
    margin-top: -45px;

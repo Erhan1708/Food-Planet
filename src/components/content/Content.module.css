@@ -20,8 +20,7 @@
    cursor: pointer;
 }
 .burger{
-   width: 500px;
-   
+   margin-left: 95px;
 }
 .Content h1{
    color: #254F4C;

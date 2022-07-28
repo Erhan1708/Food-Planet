@@ -8,7 +8,7 @@ import styles from "./Header.module.css"
 const Header = () => {
 	return (
 		<header className={styles.Header}>
-			<a href="/"><img src={iconsFoodPlanet} alt="" /></a>
+			<a href="/"><img className={styles.img} src={iconsFoodPlanet} alt="" /></a>
 			<div>
 				<ul>
 					<li>
