@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.navBar ul li {
+   display: inline;
+   list-style: none;
+   margin-left: 40px;
+}
+
+.navBar {
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+}
+
+.navBar a {
+   text-decoration: none;
+   color: black;
+}
+
+.navBar h1 {
+   color: #254F4C;
+   margin: 0 145px 0 35px;
+   font-size: 28px;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.product_block {
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 265px;
+   margin: 45px 18px;
+   color: #254F4C;
+   border-radius: 45px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+   width: 231px;
+   text-align: center;
+   margin: 0 0 7px;
+
+}
+
+.product_block button {
+   background-color: #254F4C;
+   color: #fff;
+   border: 0;
+   padding: 13px 65px;
+   border-radius: 35px;
+   font-size: 15px;
+   cursor: pointer;
+   margin: 0;
+}
+
+.product_block b {
+   font-size: 35px;
+   color: #FF583E;
+   margin: -20px 8px;
+   cursor: pointer;
+}
+
+.amount {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+}
+
+.product_block h3 {
+   margin: 7px 0 0 0;
+}
+
+.product_block img {
+   margin-top: -45px;
+}
+
+.Content{
+   width: 1205px;
+}
+.filter{
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   justify-content:flex-end;
+   align-items: center;
+   margin-right: 42px;
+   margin-bottom: 30px;
+   
+}
+.filter select{
+   height: 30px;
+   width: 150px;
+   text-align: center;
+   margin: 12px ;
+   border: 1px solid rgba(128, 128, 128, 0.763);
+}
+.btn{
+   padding: 13px 65px;
+   border-radius: 35px;
+   font-size: 15px;
+   cursor: pointer;
+   background: transparent;
+   border: 1px solid #FF583E;
+   color: #FF583E;
+}
