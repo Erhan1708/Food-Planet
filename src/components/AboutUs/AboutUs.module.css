@@ -1,0 +1,15 @@
+.AboutUs_Blocks{
+   display: flex;
+}
+.block{
+   text-align: center;
+   width: 250px;
+   margin: 25px;
+}
+.About_Us{
+   color: #254F4C;
+   margin-top: 15px;
+}
+.About_Us h2{
+   margin-left: 10px;
+}

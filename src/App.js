@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import AboutUs from './components/AboutUs/AboutUs'
 import Content from './components/content/Content'
 import Header from './components/Header/Header'
 import MenuContent from './components/MenuContent/MenuContent'
@@ -11,7 +12,8 @@ const App = () => {
         <Header />
         <Content />
         <NewContent />
-        <MenuContent/>
+        <MenuContent />
+        <AboutUs/>
      </>
   )
 }

@@ -10,6 +10,10 @@ import pizza_pepper from "../asset/img/menu_pizza/pizzapepper.svg";
 import pizza_tomato_cheese from "../asset/img/menu_pizza/pizzatomatocheese.svg";
 import pizza_tomato_chicken_sausage from "../asset/img/menu_pizza/pizzatomatochickensausage.svg";
 
+import fasrDelivery from "../asset/icons/fastdelivery.svg"
+import freshFood from "../asset/icons/freshfood.svg"
+import uniqueMenu from "../asset/icons/uniquemenu.svg"
+import mapGit from "../asset/icons/mapgit.svg"
 
 export const nawBar = [
    {
@@ -131,5 +135,29 @@ export const menu_Pizza = [
 		description:
 			"Булка, котлета,сыр,  соленый огурец, лук, помидор, салат айсберг, соус чесночный, соус гриль, кетчуп, майонез",
 		price: "200",
+	},
+];
+
+export const About_Us = [
+	{
+		img: [fasrDelivery],
+		title: "Мгновенная доставка",
+		description: "Доставим заказанную вами еду за 30 минут + напиток в подарок",
+	},
+	{
+		img: [freshFood],
+		title: "Свежие продукты",
+		description:
+			"Вся продукция хранится в хороших условиях тем самым продливая срок хранения",
+	},
+	{
+		img: [uniqueMenu],
+		title: "Уникальное меню",
+		description: "Ежедневно мы обновляем наше меню и том числе коктейльное",
+	},
+	{
+		img: [mapGit],
+		title: "Доставка",
+		description: "Мы быстро доставляем вашу еду по указанному адресу",
 	},
 ];
