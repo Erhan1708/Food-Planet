@@ -1,6 +1,5 @@
 import React from "react";
 import iconsFoodPlanet from "../../asset/icons/icon-food-planet.svg";
-import subselection from "../../asset/icons/subselection.svg";
 import phone from "../../asset/icons/phone.svg"
 import basket from "../../asset/icons/basket.svg"
 import styles from "./Header.module.css"
@@ -16,7 +15,6 @@ const Header = () => {
 					</li>
 					<li>
 						<a href="/menu">Меню </a>
-						<img src={subselection} alt="" />
 					</li>
 					<li>
 						<a href="/delivery">Доставка</a>
