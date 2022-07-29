@@ -15,6 +15,8 @@ import freshFood from "../asset/icons/freshfood.svg"
 import uniqueMenu from "../asset/icons/uniquemenu.svg"
 import mapGit from "../asset/icons/mapgit.svg"
 
+import avatar from "../asset/icons/avatar.svg"
+
 export const nawBar = [
    {
       link:"/#",
@@ -159,5 +161,35 @@ export const About_Us = [
 		img: [mapGit],
 		title: "Доставка",
 		description: "Мы быстро доставляем вашу еду по указанному адресу",
+	},
+];
+
+export const Review_aboutUs = [
+	{
+		img: [avatar],
+		name: "Сергей",
+		description:
+			"Большое спасибо! 5 пицц доставили даже быстрее чем планировалось. Пицца была горячая и всему коллективу понравилась! День Рождения прошел отлично! :)",
+		date: "02.07.2020",
+	},
+	{
+		img: [avatar],
+		name: "Сергей",
+		description:
+			"Очень вкусные роллы Хаки, всем рекомендую! заказали в первый раз и теперь станем постоянными клиентами! Спасибо!",
+		date: "02.07.2020",
+	},
+	{
+		img: [avatar],
+		name: "Сергей",
+		description:
+			"Очень избирателен в еде, и Уже в третий раз не разочаровываюсь в Food Planet, советую всем! Жена тоже довольна!",
+		date: "02.07.2020",
+	},
+	{
+		img: [avatar],
+		name: "Сергей",
+		description: "Хочу поблагодарить за бургер !Очень вкусненький в меру остренький) Спасибо,удивили!)",
+		date: "02.07.2020",
 	},
 ];
