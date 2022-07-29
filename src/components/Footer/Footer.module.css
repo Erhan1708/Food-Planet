@@ -1,0 +1,24 @@
+.Footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #254F4C;
+   width: 1400px;
+   height: 150px;
+}
+.Footer ul li {
+   display: inline;
+   list-style: none;
+   margin-left: 60px;
+}
+.Footer a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+}
+.Footer img{
+   margin-left: 4px;
+}
+.img{
+   margin-right: 10px;
+}
