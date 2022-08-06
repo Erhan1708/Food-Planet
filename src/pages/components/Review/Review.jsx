@@ -1,7 +1,7 @@
 import React from "react";
-import { Review_aboutUs } from "../../constants";
+import { Review_aboutUs } from "../../../constants/index";
 import styles from "./Review.module.css";
-import pen from "../../asset/icons/pen.svg";
+import pen from "../../../asset/icons/pen.svg";
 
 const Review = () => {
 	return (

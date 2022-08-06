@@ -1,5 +1,5 @@
 import React from "react";
-import { About_Us } from "../../constants";
+import { About_Us } from "../../../constants";
 import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {

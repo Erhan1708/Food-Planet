@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./MenuContent.module.css";
-import { menu_Pizza, nawBar } from "../../constants";
+import { menu_Pizza, nawBar } from "../../../constants/index";
 
 const MenuContent = () => {
 	const [number, setNumber] = useState(0);

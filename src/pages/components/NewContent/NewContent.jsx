@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { nawBar, New_Content } from "../../constants";
+import { nawBar, New_Content } from "../../../constants/index";
 import styles from "./NewContent.module.css";
 
 const NewContent = () => {
