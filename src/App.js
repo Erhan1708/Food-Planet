@@ -1,25 +1,31 @@
-import React from 'react'
-import './App.css'
-import AboutUs from './pages/components/AboutUs/AboutUs'
-import Content from './pages/content/Content'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import MenuContent from './pages/components/MenuContent/MenuContent'
-import NewContent from './pages/components/NewContent/NewContent'
-import Review from './pages/components/Review/Review'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Toaster} from "react-hot-toast"
+import "./App.css";
+import Content from "./pages/content/Content";
+import Header from "./components/Header/Header";
+import Basket from "./pages/Basket/Basket";
+import NotFound from "./pages/NotFound/NotFound";
+import Delivery from "./pages/Delivery/Delivery";
+import Contacts from "./pages/Contacts/Contacts";
+import Menu from "./pages/Menu/Menu";
 
 const App = () => {
-  return (
-     <>
-        <Header />
-        <Content />
-        <NewContent />
-        <MenuContent />
-        <AboutUs/>
-        <Review />
-        <Footer/>
-     </>
-  )
-}
+   return (
+      <BrowserRouter>
+         <Routes>
+            <Route path="/" element={<Header />} >
+               <Route index element={<Content />} />
+               <Route path="/menu" element={<Menu />} />
+               <Route path="/basket" element={<Basket />} />
+               <Route path="/delivery" element={<Delivery />} />
+               <Route path="/contacts" element={<Contacts/>}/>
+            </Route>
+            <Route path="*" element={<NotFound />} />
+         </Routes>
+         <Toaster/>
+      </BrowserRouter>
+   );
+};
 
-export default App
+export default App;

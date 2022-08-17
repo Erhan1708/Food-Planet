@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import styles from "./MenuContent.module.css";
-import { menu_Pizza, nawBar } from "../../../constants/index";
+import { nawBar } from "../../../constants/index";
+import { NavLink } from "react-router-dom";
 
 const MenuContent = () => {
-	const [number, setNumber] = useState(0);
+   const [number, setNumber] = useState(1);
+   const [menu, setMenu] = useState([])
+
+   useEffect(() => {
+      fetch("http://localhost:3001/pizza")
+         .then(response => {
+            if (response.status === 200) {
+              return response.json()
+            } else {
+               toast.error("ошибка сервера")
+            }
+         })
+      .then(data => setMenu(data))
+   },[])
 
 	return (
 		<div className={styles.MenuContent}>
@@ -11,8 +26,8 @@ const MenuContent = () => {
 				<h1>Меню</h1>
 				<ul>
 					{nawBar.map((post) => (
-						<li>
-							<a href={post.link}>{post.title}</a>
+                  <li>
+                     <NavLink to={post.link}>{post.title}</NavLink>
 						</li>
 					))}
 				</ul>
@@ -27,22 +42,24 @@ const MenuContent = () => {
 					</select>
 				</div>
 				<div className={styles.menu}>
-					{menu_Pizza.map((post) => (
+					{menu.map((post) => (
 						<div className={styles.product_block}>
 							<img src={post.img} alt="" />
 							<h2>{post.title}</h2>
 							<p className={styles.description}>{post.description}</p>
 							<h3>{post.price} сом</h3>
 							<p className={styles.amount}>
-								<b onClick={() => setNumber(number - 1)}>&minus;</b>
+								<b onClick={() => {if(number > 1){setNumber(number-1)}}}>&minus;</b>
 								{number}
-								<b onClick={() => setNumber(number + 1)}>+</b>
+								<b onClick={() => {if(number < 99){setNumber(number+1)}}}>+</b>
 							</p>
 							<button>В корзину</button>
 						</div>
 					))}
-					<button className={styles.btn}>Показать еще</button>
-				</div>
+            </div>
+            <div className={styles.more}>
+               <button >Показать еще</button>
+            </div>
 			</div>
 		</div>
 	);

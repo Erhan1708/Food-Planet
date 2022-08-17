@@ -10,6 +10,13 @@
    background-image: url(../../../asset/img/review/box.png);
    background-repeat: no-repeat;
 }
+.block h4{
+   margin-top: -5px;
+}
+
+.ava{
+   width: 100px;
+}
 
 .Review {
    color: #254F4C;

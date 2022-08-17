@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;1,500&display=swap');
+
+ section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /*padding: 50px;*/
+}
+
+.container {
+   display: flex;
+   margin: 40px 0;
+   border-radius: 70px;
+   box-sizing: border-box;
+   background-color: #2B4241;
+   box-shadow: 0 0 40px 0;
+}
+
+.container h1 {
+   font-family: 'Barlow Condensed', sans-serif;
+   color: white;
+   font-weight: 500;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   font-size: 500px;
+   line-height: calc(100vh / 4);
+   border-radius: 70px;
+   padding: 30px;
+   animation-name: anm;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.container p {
+   text-align: center;
+   font-size: 24px;
+   box-sizing: border-box;
+   /*padding: 35px 0 85px;*/
+}
+
+.container img {
+   display: block;
+   border-radius: 50%;
+   width: 400px;
+}
+
+.btn {
+   border: none;
+   padding: 0 20px;
+   height: 48.3px;
+   background: #FF583E;
+   border-radius: 40px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 147.19%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.btn:hover {
+   background-color: #ff4326;
+   cursor: pointer;
+}
+
+
+@keyframes anm {
+   from {
+      background-color: #2B4241;
+   }
+
+   to {
+      box-shadow: inset 1px 0 20px 20px #ff4326;
+
+   }
+}
