@@ -1,7 +1,7 @@
 import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import iconsFoodPlanet from "../../asset/icons/icon-food-planet.svg";
 import phone from "../../asset/icons/phone.svg"
-import basket from "../../asset/icons/basket.svg"
 import styles from "./Header.module.css"
 import { NavLink, Outlet } from "react-router-dom";
 
@@ -43,7 +43,7 @@ const Header = () => {
 							</li>
 							<li>
 								<NavLink className={setActive} to="/basket">
-									<img src={basket} alt="" />
+                        <FaShoppingCart className={styles.basket} />
 									<b>0</b>
 								</NavLink>
 							</li>

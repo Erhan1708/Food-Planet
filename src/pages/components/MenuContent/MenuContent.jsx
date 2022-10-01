@@ -8,6 +8,15 @@ const MenuContent = () => {
    const [number, setNumber] = useState(1);
    const [menu, setMenu] = useState([])
 
+   const getProduct = (data) => { 
+      const id = data.id;
+      let food = JSON.parse(localStorage.getItem('food')) || {};
+      food[id]={...data, count:1}
+      
+      localStorage.setItem('food', JSON.stringify(food))
+      
+   }
+
    useEffect(() => {
       fetch("http://localhost:3001/pizza")
          .then(response => {
@@ -26,7 +35,7 @@ const MenuContent = () => {
 				<h1>Меню</h1>
 				<ul>
 					{navBar.map((post) => (
-                  <li>
+                  <li key={post.id}>
                      <NavLink to={post.link}>{post.title}</NavLink>
 						</li>
 					))}
@@ -42,8 +51,8 @@ const MenuContent = () => {
 					</select>
 				</div>
 				<div className={styles.menu}>
-					{menu.map((post) => (
-						<div className={styles.product_block}>
+					{menu.map( post=> (
+						<div key={post.id} className={styles.product_block}>
 							<img src={post.img} alt="" />
 							<h2>{post.title}</h2>
 							<p className={styles.description}>{post.description}</p>
@@ -53,7 +62,7 @@ const MenuContent = () => {
 								{number}
 								<b onClick={() => {if(number < 99){setNumber(number+1)}}}>+</b>
 							</p>
-							<button>В корзину</button>
+							<button onClick={()=>getProduct(post)}>В корзину</button>
 						</div>
 					))}
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import toast from "react-hot-toast";
+import {toast} from "react-hot-toast";
 import styles from "./Delivery.module.css"
 import image from "../../asset/img/delivery/devilery_image.png"
 import imageTree from  "../../asset/img/delivery/del1.png"

@@ -19,11 +19,11 @@
 .container h1 {
    font-family: 'Barlow Condensed', sans-serif;
    color: white;
-   font-weight: 500;
+   font-weight: 400;
    margin: 0;
    display: flex;
    align-items: center;
-   font-size: 500px;
+   font-size: 400px;
    line-height: calc(100vh / 4);
    border-radius: 70px;
    padding: 30px;
@@ -33,17 +33,18 @@
    animation-direction: alternate;
 }
 
-.container p {
+.notFound p {
    text-align: center;
-   font-size: 24px;
+   font-size: 19px;
    box-sizing: border-box;
+   font-family: 'Barlow Condensed', sans-serif;
    /*padding: 35px 0 85px;*/
 }
 
 .container img {
    display: block;
    border-radius: 50%;
-   width: 400px;
+   width: 300px;
 }
 
 .btn {
@@ -67,7 +68,7 @@
 }
 
 
-@keyframes anm {
+/* @keyframes anm {
    from {
       background-color: #2B4241;
    }
@@ -76,4 +77,4 @@
       box-shadow: inset 1px 0 20px 20px #ff4326;
 
    }
-}
+} */

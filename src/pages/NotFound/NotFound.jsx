@@ -4,7 +4,7 @@ import styles from "./NotFound.module.css"
 import { NavLink } from 'react-router-dom'
 const NotFound = () => {
   return (
-		<section>
+		<section className={styles.notFound}>
 			<div className={styles.container}>
 				<h1>
 					4<img src={pizzaImg} alt="" />4

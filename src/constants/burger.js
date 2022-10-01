@@ -4,6 +4,7 @@ import cheeseburger2 from "../asset/img/new_menu/cheeseburger2.svg";
 import cheeseburger3 from "../asset/img/new_menu/cheeseburger3.svg";
 export const New_Content = [
 	{
+      id:1,
 		img: [tofu_burger],
 		title: "Чизбургер",
 		description:
@@ -11,6 +12,7 @@ export const New_Content = [
 		price: "200",
 	},
 	{
+      id:2,
 		img: [cheeseburger1],
 		title: "Чизбургер",
 		description:
@@ -18,6 +20,7 @@ export const New_Content = [
 		price: "200",
 	},
 	{
+      id:3,
 		img: [cheeseburger2],
 		title: "Чизбургер",
 		description:
@@ -25,6 +28,7 @@ export const New_Content = [
 		price: "200",
 	},
 	{
+      id:4,
 		img: [cheeseburger3],
 		title: "Чизбургер",
 		description:

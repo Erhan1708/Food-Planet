@@ -7,6 +7,7 @@ import MenuContent from "../components/MenuContent/MenuContent"
 import AboutUs from '../components/AboutUs/AboutUs'
 import Review from "../components/Review/Review"
 import Footer from "../../components/Footer/Footer"
+import { Link } from 'react-router-dom'
 
 const Content = () => {
    return (
@@ -17,8 +18,8 @@ const Content = () => {
 				<p>
 					Доставим заказ вовремя и можете рассчитывать, что еда будет доставлен
 					всегда горячим и ароматным.
-				</p>
-				<button className={styles.btn}>Перейти в меню<img src={next} alt="" /></button>
+               </p>
+               <Link to="/menu"><button className={styles.btn}>Перейти в меню<img src={next} alt="" /></button></Link>
         </div>
         <img className={styles.burger} src={burger} alt="" />
          </div>

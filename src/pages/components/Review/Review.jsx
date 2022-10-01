@@ -21,7 +21,7 @@ const Review = () => {
 			<h2>Отзывы</h2>
 			<div className={styles.Review_blocks}>
 				{revi.map((post) => (
-						<div className={styles.block}>
+						<div key={post.id} className={styles.block}>
 							<img className={styles.ava} src={post.img} alt="" />
 							<h4>
 								{post.name} <img src={pen} alt="" />

@@ -1,0 +1,69 @@
+.container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.head {
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+   border-bottom: 0.5px solid gray;
+}
+
+.item {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.price {
+   margin-left: 140px;
+
+}
+
+.count {
+   margin-left: 130px;
+}
+
+.cartСontents {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   align-items: center;
+}
+
+.cartСontents img {
+   width: 100px;
+}
+
+.nomination {
+   display: flex;
+   align-items: center;
+}
+
+.total {
+   border-top: 0.5px solid gray;
+}
+
+.btn {
+   margin-left: 30px;
+   color: white;
+   width: 100px;
+   height: 25px;
+   border-radius: 10px;
+   background-color: #FF583E;
+   border: 0;
+   cursor: pointer;
+
+}
+
+.btn:hover {
+   width: 105px;
+   height: 28px;
+}
+
+.cartСontents span {
+   font-size: 16px;
+   margin: 0 5px;
+   cursor: pointer;
+}
