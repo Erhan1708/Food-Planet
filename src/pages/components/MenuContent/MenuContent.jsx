@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import styles from "./MenuContent.module.css";
-import { nawBar } from "../../../constants/index";
+import { navBar } from "../../../constants/index";
 import { NavLink } from "react-router-dom";
 
 const MenuContent = () => {
@@ -25,7 +25,7 @@ const MenuContent = () => {
 			<div className={styles.navBar}>
 				<h1>Меню</h1>
 				<ul>
-					{nawBar.map((post) => (
+					{navBar.map((post) => (
                   <li>
                      <NavLink to={post.link}>{post.title}</NavLink>
 						</li>

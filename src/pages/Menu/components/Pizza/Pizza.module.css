@@ -1,3 +1,9 @@
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
 .menu {
    display: flex;
    justify-content: space-between;

@@ -5,7 +5,7 @@ import pen from "../../../asset/icons/pen.svg";
 
 const Review = () => {
    const [revi, setRevi] = useState([])
-   useEffect(()=> {
+   useEffect(() => {
       fetch("http://localhost:3001/review")
          .then(response => {
             if (response.status === 200) {
@@ -14,8 +14,8 @@ const Review = () => {
                toast.error("произошло ошибка при загрузке коментарии")
             }
          })
-      .then(data => setRevi(data))
-   })
+         .then(data => setRevi(data))
+   }, []);
 	return (
 		<div className={styles.Review}>
 			<h2>Отзывы</h2>

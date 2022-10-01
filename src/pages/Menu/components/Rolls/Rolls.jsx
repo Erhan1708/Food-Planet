@@ -18,7 +18,7 @@ const Rolls = () => {
  }, []);
 
  return (
-		<div>
+    <div className={styles.container}>
 			{pizza.map((post) => (
 				<div className={styles.product_block}>
 					<img src={post.img} alt="" />
