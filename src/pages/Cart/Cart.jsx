@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import EmptyCart from "./EmptyCart/EmptyCart";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 
-const Basket = () => {
+const Cart = () => {
 	const [cart , setCart]=useState([])
 
    const getProduct = () => { 
@@ -21,4 +21,4 @@ const Basket = () => {
 	);
 };
 
-export default Basket;
+export default Cart;
