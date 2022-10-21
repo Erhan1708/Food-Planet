@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 const EmptyCart = () => {
   return (
-     <section className="container">
+     <section className={styles.container}>
         <div className="content">
            <div className={styles.content}>
               <div className={styles.emptyCart}>
-                 <img src="" alt="empty" />
+                 <img src="https://cdn.dodostatic.net/site-static/dist/121df529925b0f43cc73.svg" alt="empty" />
               </div>
               <div className={styles.emptyCartTitle}>
                  Ой, пусто!
