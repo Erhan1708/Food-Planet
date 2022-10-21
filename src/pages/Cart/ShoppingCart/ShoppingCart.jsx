@@ -5,11 +5,22 @@ const ShoppingCart = () => {
    
    const [food, setFood] = useState([]);
    const [number, setNumber] = useState(1);
+
    const getProduct = () => {
-      const food = JSON.parse(localStorage.getItem("food"));
-      setFood(Object.values(food));
+      const food = JSON.parse(localStorage.getItem('food'));
+         setFood(Object.values(food));
    }
-   useEffect(getProduct, [])
+
+   const deleteItem = (data) => { 
+      let newFood = food.filter(post => post.id !== data.id ? true : false);
+      localStorage.setItem("food", JSON.stringify(newFood))
+      setFood(newFood);
+      console.log(newFood);
+   }
+
+   
+
+   useEffect(getProduct, [food]);
 
    return (
       <div className={styles.container}>
@@ -37,8 +48,9 @@ const ShoppingCart = () => {
                      <p className={styles.count}>
                         <span onClick={() => { if (number > 1) { setNumber(number - 1) } }}>&minus;</span>
                         {post.count}
-                        <span onClick={() => { if (number < 99) { setNumber(number + 1) } }}>+</span></p>
-                     <button className={styles.btn}>Удалить</button>
+                        <span onClick={() => { if (number < 99) { setNumber(number + 1) } }}>+</span>
+                        </p>
+                     <button onClick={(e) => deleteItem(post)} className={styles.btn}>Удалить</button>
                   </div>
                ))}
             </div>
